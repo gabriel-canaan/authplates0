@@ -9,6 +9,8 @@ const renderGreeting = (greeting, key) => (
 
 const Greetings = ({greetings, dispatch}) => (
   <div>
+    <a href="/api/v1/auth/twitter">Log in to twitter</a>
+    <a href='/api/v1/auth/logout'>Logout</a>
     <button onClick={() => dispatch(getGreetings())}>Show Greetings</button>
     {greetings.map(renderGreeting)}
   </div>
